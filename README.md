@@ -299,4 +299,4 @@ Bên cạnh bảng Games lưu trữ những thông tin về game, ngày mà user
 **TÌNH HÌNH**
 
 * Kết quả bài tập chưa cài đặt để trải nghiệm gRPC.
-* Hiện tại bài tập chưa có Unit/Integration test, các dự án thực tế nên có các bài test.
+* Hiện tại bài tập chưa có Unit/Integration test.
