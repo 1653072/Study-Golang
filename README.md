@@ -1,21 +1,54 @@
 # HỌC GOLANG
 
+## MỤC LỤC
+
+- [Thông tin thực hiện](#id-section1)
+- [Các nguồn tự học Golang](#id-section2)
+    - [Nguồn học hữu ích](#id-section2-1)
+    - [Nguồn hướng dẫn cài đặt](#id-section2-2)
+    - [Các thư viện cần thiết](#id-section2-3)
+    - [Hướng dẫn kiến trúc clean](#id-section2-4)
+- [Bài tập thực hành](#id-section3)
+    - [Đề bài tập](#id-section3-1)
+    - [Kết quả thực hiện](#id-section3-2)
+        - [Thời gian thực hiện](#id-section3-2-1)
+        - [Dữ liệu của bài tập](#id-section3-2-2)
+        - [Công cụ sử dụng](#id-section3-2-3)
+        - [Data model](#id-section3-2-4)
+        - [Architecture](#id-section3-2-5)
+        - [Sequence diagram](#id-section3-2-6)
+        - [Tổ chức thư mục của bài tập](#id-section3-2-7)
+        - [Ngoài lề](#id-section3-2-8)
+        - [Performance test](#id-section3-2-9)
+        - [SSL/TLS](#id-section3-2-10)  
+        - [Tình hình](#id-section3-2-11)
+
+<div id='id-section1'/>
+
 ## THÔNG TIN THỰC HIỆN
 
 * Người thực hiện: Trần Kiến Quốc
 * Số ngày: 5 ngày
 * Thời điểm: 23/03/2020 - 28/03/2020
 
+<div id='id-section2'/>
+
 ## CÁC NGUỒN TỰ HỌC GOLANG
+
+<div id='id-section2-1'/>
 
 1. Nguồn học hữu ích:
     * [Go TechMaster](https://techmaster.vn/posts?keyword=golang&category=&author=), với nhiều bài học hữu ích được trình bày bằng ngôn ngữ Việt. Nếu học bằng ngôn ngữ Anh, có thể vào [GeeksforGeeks](https://www.geeksforgeeks.org/identifiers-in-go-language/?ref=lbp).
     * [A Tour of Golang](https://tour.golang.org/list), là trang web chính thống học Golang với các bài học được chia thành từng phần.
     * [ZaloPay Advanced Gobook](https://github.com/zalopay-oss/go-advanced), quyển sách được viết bởi các kỹ sư tại ZaloPay, VNG. Có 2 hình thức đọc là PDF và Online GitBook.
 
+<div id='id-section2-2'/>
+
 2. Nguồn hướng dẫn cài đặt:
     * IDE tốt để sử dụng: Goland của JetBrains (có thể dùng tài khoản email sinh viên `*.edu` để đăng ký sử dụng).
     * Hướng dẫn cài đặt Golang: [Golang.org](https://golang.org/doc/install).
+
+<div id='id-section2-3'/>
 
 3. Các thư viện cần thiết:
     * Database ORM: 
@@ -35,9 +68,15 @@
         * [Github of gRPC](https://github.com/grpc/grpc-go)
     * ...more...
 
+<div id='id-section2-4'/>
+
 4. Hướng dẫn kiến trúc clean (chỉ tham khảo): [Github of Demo Clean Architecture](https://github.com/bxcodec/go-clean-arch/tree/master/author)
 
+<div id='id-section3'/>
+
 ## BÀI TẬP THỰC HÀNH
+
+<div id='id-section3-1'/>
 
 ### ĐỀ BÀI TẬP
 
@@ -66,7 +105,11 @@
     * Ghi Log cho tất cả lời gọi tới API.
     * Unit/Integration test (Optional)
 
+<div id='id-section3-2'/>
+
 ### KẾT QUẢ THỰC HIỆN
+
+<div id='id-section3-2-1'/>
 
 **THỜI GIAN THỰC HIỆN**
 
@@ -74,6 +117,8 @@
     * 1,5 ngày: Đọc tài liệu về Go (Lời giới thiệu, cách sử dụng ngôn ngữ, các cú pháp, ưu nhược điểm,...)
     * 3,5 - 4 ngày: Code và viết tài liệu trình bày những gì đã làm.
 * Source code hoặc nội dung vẫn còn nhiều thiếu sót, chưa tốt/tối ưu, mong bạn thông cảm!
+
+<div id='id-section3-2-2'/>
 
 **DỮ LIỆU CỦA BÀI TẬP**
 
@@ -85,11 +130,15 @@
     * RPSLoadTest.jms (JMeter Tool): Kịch bản thực hiện Load test cho chương trình (Import file này vào JMeter & Play)
 * Thư mục `./rps-game` chứa source code của chương trình.
 
+<div id='id-section3-2-3'/>
+
 **CÔNG CỤ SỬ DỤNG**
 
 * Chương trình RPS sử dụng Goland IDE để thực thi và cài đặt.
 * Sử dụng JMeter để thực hiện performance test (Hoặc có thể sử dụng Locust Performance Testing Tool).
 * Sử dụng PostmanCanary để test các API triển khai theo HTTP/HTTPS.
+
+<div id='id-section3-2-4'/>
 
 **DATA MODEL**
 
@@ -108,6 +157,8 @@ Bên cạnh bảng Games lưu trữ những thông tin về game, ngày mà user
 * turnType: Kiểu lượt chơi (0: Là lượt chơi tranh đấu có kết quả thắng hoặc thua, 1: Là lượt chơi đã hòa)
 * turnDate: Thời điểm user thực hiện lượt chơi của mình
 
+<div id='id-section3-2-5'/>
+
 **ARCHITECTURE**
 
 ![Demo-Mvc-Arch](./images/demo-mvc-architecture.png)
@@ -123,6 +174,8 @@ Bên cạnh bảng Games lưu trữ những thông tin về game, ngày mà user
     * Phía Server nhận được thông tin từ Client hoặc gửi thông tin đến Client thông qua Controller của nó. 
     * Nếu cần truy cập dữ liệu từ CSDL (MySQL), Controller dùng Model để yêu cầu và nhận dữ liệu từ nó. 
     * Model, là nơi trực tiếp truy cập vào CSDL để thao tác, truy vấn dữ liệu. Hệ thống sử dụng GORM để thao tác.
+
+<div id='id-section3-2-6'/>
 
 **SEQUENCE DIAGRAM**
 
@@ -151,6 +204,8 @@ Bên cạnh bảng Games lưu trữ những thông tin về game, ngày mà user
 ![See Game History Sequence Diagram](./images/rps_seegamehistory.png)
 
 *Chú thích tính năng SeeGameHistory: Hiện trong bài tập này, ứng dụng không trả kết quả là tập hợp của game & gameturn dựa trên cùng một gameId, mà tách phần lấy dữ liệu gameturn thành một API riêng biệt dựa trên gameId (param) được gửi đến.*
+
+<div id='id-section3-2-7'/>
 
 **TỔ CHỨC THƯ MỤC CỦA BÀI TẬP**
 
@@ -196,10 +251,14 @@ Bên cạnh bảng Games lưu trữ những thông tin về game, ngày mà user
     (Việc sử dụng các thông tin cấu hình và ghi nhận log sẽ diễn ra xuyên suốt chương trình)
     ```
 
+<div id='id-section3-2-8'/>
+
 **NGOÀI LỀ**
 
 * Cây thư mục hoặc tên được đặt có thể thay đổi theo kiến trúc hệ thống, nghiệp vụ hoặc cảm giác thuận tiện của mỗi cá nhân, nhóm. Các thư viện hay plugins khác có thể thêm vào cây thư mục với vị trí mà bản thân mong muốn, nhưng vẫn cần phải thỏa về mặt quy ước thiết kế, lập trình chung.
 * Controller và Model nằm ở phía server, được chia tách thành các phần nhỏ hơn để dễ dàng quản lý, bảo trì cũng như mở rộng. Ngoài ra, có thể đặt View (Giao diện Web) tại đây. Tuy nhiên, ta cũng có thể phát triển phần View như là một service/system khác với các nghiệp vụ/yêu cầu khác, nó sẽ tách bạch hoàn toàn với system này, và system này sẽ publish các API cần thiết cho nó hoặc các service khác sử dụng. Đồng thời, các service khác nhau cũng có thể gọi lẫn nhau, hoặc các service khác nhau sẽ gọi đến duy nhất một hệ thống core này (microservice). Phương thức truyền tải là gRPC (thay vì là HTTP thông thường) để tăng tốc truyền nhận dữ liệu, request, response; hoặc có thể kết hợp sử dụng Apache Kafka (nền tảng stream dữ liệu phân tán giữa các service/system).
+
+<div id='id-section3-2-9'/>
 
 **PERFORMANCE TEST**
 
@@ -229,9 +288,13 @@ Bên cạnh bảng Games lưu trữ những thông tin về game, ngày mà user
         * Avg. Bytes: Kích cỡ trung bình (theo byte) của các gói response.
 * Lưu ý: Kết quả test chỉ mang tính chất tham khảo vì còn phụ thuộc vào cấu hình server (máy tính), tình hình sử dụng thực tế. Dĩ nhiên, ta có thể cải thiện kết quả để tốt hơn nữa với các hình thức khác nhau: Tối ưu mã code, thêm server, nâng cao cấu hình server,...
 
+<div id='id-section3-2-10'/>
+
 **SSL/TLS**
 
 * Về việc tạo chứng chỉ SSL/TLS, có thể xem nhiều loại và cách tạo khác nhau: [zytrax.com](https://www.zytrax.com/tech/survival/ss.html)
+
+<div id='id-section3-2-11'/>
 
 **TÌNH HÌNH**
 
