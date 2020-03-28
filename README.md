@@ -2,7 +2,7 @@
 
 ## MỤC LỤC
 
-- [Thông tin thực hiện](#id-section1)
+<!-- Đã xóa phần #id-section1 -->
 - [Các nguồn tự học Golang](#id-section2)
     - [Nguồn học hữu ích](#id-section2-1)
     - [Nguồn hướng dẫn cài đặt](#id-section2-2)
@@ -22,14 +22,6 @@
         - [Performance test](#id-section3-2-9)
         - [SSL/TLS](#id-section3-2-10)  
         - [Tình hình](#id-section3-2-11)
-
-<div id='id-section1'/>
-
-## THÔNG TIN THỰC HIỆN
-
-* Người thực hiện: Trần Kiến Quốc
-* Số ngày: 5 ngày
-* Thời điểm: 23/03/2020 - 28/03/2020
 
 <div id='id-section2'/>
 
@@ -113,10 +105,10 @@
 
 **THỜI GIAN THỰC HIỆN**
 
-* Đây là lần đầu tiên mình học Golang và cũng là bài tập đầu tiên để học hỏi, trải nghiệm. Khoảng thời gian mình thực hiện như bên dưới:
+* Đây là lần đầu tiên mình học Golang và cũng là bài tập đầu tiên để học hỏi, trải nghiệm. Khoảng thời gian thực hiện là 5 ngày (23/03/2020 - 28/03/2020):
     * 1,5 ngày: Đọc tài liệu về Go (Lời giới thiệu, cách sử dụng ngôn ngữ, các cú pháp, ưu nhược điểm,...)
     * 3,5 - 4 ngày: Code và viết tài liệu trình bày những gì đã làm.
-* Source code hoặc nội dung vẫn còn nhiều thiếu sót, chưa tốt/tối ưu, mong bạn thông cảm!
+* Source code hoặc nội dung vẫn còn nhiều thiếu sót, mong bạn thông cảm!
 
 <div id='id-section3-2-2'/>
 
