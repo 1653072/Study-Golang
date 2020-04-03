@@ -5,3 +5,4 @@ go get golang.org/x/crypto/bcrypt
 go get github.com/dgrijalva/jwt-go
 go get gopkg.in/natefinch/lumberjack.v2
 go get github.com/rs/cors
+go get github.com/spf13/viper
